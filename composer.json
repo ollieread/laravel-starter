@@ -71,11 +71,11 @@
       "@php vendor/bin/phpstan analyse --memory-limit=1G"
     ],
     "ide-helper"               : [
-      "@php artisan ide-helper:generate",
+      "@php artisan ide-helper:generate -n",
       "@php artisan ide-helper:meta"
     ],
     "ide-helper:models"        : [
-      "@php artisan ide-helper:models --write-mixin"
+      "@php artisan ide-helper:models -M -R -p"
     ]
   },
   "extra"            : {
